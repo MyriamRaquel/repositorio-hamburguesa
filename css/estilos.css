@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formato-header img{
+  width: 150px;
+  height: 150px;
+  display: flex;
+} 
+.formato-header {
+  display: flex;
+  align-items: center; 
+  background-color: rgb(134, 37, 37);
+} 
+.formato-header div {
+  display: flex;
+  gap: 50px;
+} 
+.menu-navegable {
+  display: flex; 
+  gap: 120px; 
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin-left: 60px;
+}  
+.menu-navegable li a { 
+ text-decoration: none; 
+ color: black; 
+  margin-right: 50px;
+}   
+.menu-navegable li a:hover {
+  color: white;
+}  
+.propuesta-general main{
+  display: flex;
+}
+.propuesta-general h1{
+  text-align: center;
+  margin: 30px 0px;
+}
+.propuesta-general h3{
+  text-align: center;
+}
+.acomoda-menu{
+  display: flex;
+  justify-content: space-around;
+} 
+.ordena-articulos{
+  width: 300px;
+  height: 300px; 
+}
+.ordena-articulos img{
+  width: 100%;
+}
+.ordena-articulos li{
+  display: block;
+  justify-self: center;
+}
+.botones-confirmacion{
+  margin: 100px 100px;
+  justify-self: center;
+  text-decoration: none;
+}
+.botones-confirmacion button{
+  margin: 0px 100px;
+  width: 150px;
+  height: 80px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.formato-formulario {
+  margin: 30px;
+}
+.formato-formulario li{
+  display: flex;
+ list-style: none;
+ margin: 10px;
+ /* justify-self: center; */
+}
+.formato-formulario label{
+ margin: 0px 30px;
+}
