@@ -14,7 +14,7 @@
   display: flex;
   align-items: center; 
   background-color: rgb(134, 37, 37);
-  flex-wrap: rap;
+  flex-wrap: wrap;
 } 
 .formato-header div {
   display: flex;
@@ -27,7 +27,7 @@
   list-style: none;
   align-items: center;
   margin-left: 60px;
-  flex-wrap: rap;
+  flex-wrap: wrap;
 }  
 .menu-navegable li a { 
  text-decoration: none; 
@@ -50,7 +50,7 @@
 .acomoda-menu{
   display: flex;
   justify-content: space-around;
-  flex-wrap: rap;
+  flex-wrap: wrap;
 } 
 .ordena-articulos{
   width: 300px;
