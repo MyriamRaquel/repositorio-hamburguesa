@@ -14,7 +14,7 @@
   display: flex;
   align-items: center; 
   background-color: rgb(134, 37, 37);
-  flex-wrap: nowrap;
+  flex-wrap: rap;
 } 
 .formato-header div {
   display: flex;
