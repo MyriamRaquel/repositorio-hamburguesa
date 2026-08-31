@@ -27,6 +27,7 @@
   list-style: none;
   align-items: center;
   margin-left: 60px;
+  flex-wrap: rap;
 }  
 .menu-navegable li a { 
  text-decoration: none; 
@@ -49,6 +50,7 @@
 .acomoda-menu{
   display: flex;
   justify-content: space-around;
+  flex-wrap: rap;
 } 
 .ordena-articulos{
   width: 300px;
