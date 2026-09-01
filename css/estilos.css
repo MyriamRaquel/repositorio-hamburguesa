@@ -8,6 +8,15 @@
   --cajaflexible: flex;
   --colorfondo: rgb(134, 37, 37);
 }
+@keyframes logogiro {
+  to {
+    transform: rotate(0deg);
+  }
+  from{
+    transform: rotate(360deg);
+
+  }
+}
 
 .formato-header {
   display: var(--cajaflexible);
@@ -19,6 +28,8 @@
     height: 150px;
     border-radius: 100px;
     display: flex;
+    animation-name: logogiro;
+    animation-duration: 10s
     } 
     div {
     display: var(--cajaflexible);
@@ -30,12 +41,12 @@
   display: var(--cajaflexible); 
   gap: 180px;
   justify-content: space-around;
-  list-style: none;
+  /* list-style: none; */
   align-items: center;
   margin-left: 60px;
   flex-wrap: wrap;
   li { 
-  text-decoration: none; 
+  list-style: none;
   color: var(--colornegro); 
   } 
   a { 
@@ -47,12 +58,12 @@
 .menu-navegable-a-ocultar{
   display: var(--cajaflexible); 
   justify-content: space-around;
-  list-style: none;
+  /* list-style: none; */
   align-items: center;
   margin-left: 60px;
   flex-wrap: wrap;
-  li { 
-  text-decoration: none; 
+  li {  
+  list-style: none;
   color: var(--colornegro); 
   margin-left: 150px;
   } 
@@ -69,32 +80,15 @@
 .propuesta-general {
   h1{
   text-align: center;
-  margin: 30px 0px;
+  margin: 30px 30px;
   }
   h3{
-  text-align: center;
-  }
-}
-.acomoda-menu{
-  display: var(--cajaflexible);
-  justify-content: space-around;
-  flex-wrap: wrap;
-} 
-.ordena-articulos{
-  width: 300px;
-  height: 300px; 
-  img{
-  width: 100%;
-  }
-  li{
-  display: block;
-  justify-self: center;
+  text-align: left;
   }
 }
 .botones-confirmacion{
   margin: 100px 100px;
   justify-self: center;
-  text-decoration: none;
   button{
     margin: 0px 100px;
     width: 150px;
@@ -117,4 +111,29 @@
 @media (max-width: 500px) {
 .menu-navegable-a-ocultar{
       display: none}
+}
+.muestra-menu {
+  display: grid;
+  grid-template-areas: 
+  "hamburguesa nuggets papasfritas";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.opcion {
+  img {
+  width: 200px;
+  height: 200px;
+  }
+}
+#uno {
+  grid-area: hamburguesa;
+}
+#dos {
+  grid-area: nuggets;
+}
+#tres {
+  grid-area: papasfritas;
+}
+.desplazabotones {
+  margin-left: 50px;
 }
