@@ -116,15 +116,15 @@
   display: grid;
   grid-template-areas: 
   "hamburguesa nuggets papasfritas";
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  flex-wrap: wrap;
-}
+  /* flex-wrap: wrap; */
+ }
 .opcion {
   img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   }
 }
 #uno {
