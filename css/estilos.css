@@ -41,7 +41,6 @@
   display: var(--cajaflexible); 
   gap: 180px;
   justify-content: space-around;
-  /* list-style: none; */
   align-items: center;
   margin-left: 60px;
   flex-wrap: wrap;
@@ -114,11 +113,11 @@
 }
 .muestra-menu {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-rows: 1fr;
   grid-template-areas: 
   "hamburguesa nuggets papasfritas";
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   /* flex-wrap: wrap; */
  }
 .opcion {
